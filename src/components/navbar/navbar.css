@@ -1,27 +1,27 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(99, 1, 1) 0%, rgb(26, 23, 23) 100%);
-  height: 80px;
+  background: linear-gradient(90deg, rgb(11,12,16) 0%, rgb(68, 62, 62) 100%);
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 3;
 }
 
 .navbarContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  max-width: 1500px;
+  height: 5rem;
+  max-width: 93.75rem;
 }
 
 .navbarLogo {
-  color: #fff;
+  color: rgb(252, 252, 252);
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-.fa-typo3 {
+.fa-anchor {
   margin-left: 0.5rem;
   font-size: 1.8rem;
 }
@@ -37,7 +37,7 @@
 .navMenu {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  grid-gap: 0.625rem;
   list-style: none;
   text-align: center;
   width: 60vw;
@@ -46,7 +46,7 @@
 }
 
 .navItem {
-  height: 80px;
+  height: 5rem;
 }
 
 .navLinks {
@@ -59,7 +59,7 @@
 }
 
 .navLinks:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 0.25rem solid #45a29e;
   transition: all 0.2s ease-out;
 }
 
@@ -76,24 +76,22 @@
 }
 
 @media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
-  }
 
   .navMenu {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
-    top: 80px;
+    top: 5rem;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
   }
 
   .navMenu.active {
-    background: #242222;
+    background: #1f2833;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
@@ -108,16 +106,22 @@
   }
 
   .navLinks:hover {
-    background-color: #fff;
+    background-color: #45a29e;
     color: #242424;
     border-radius: 0;
   }
 
   .navbarLogo {
+    font-size: 1.5625rem;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(25%, 50%);
+    transform: translate(20%, 75%);
+  }
+
+  .fa-anchor {
+    margin-left: 0.625rem;
+    font-size: 1.25rem;
   }
 
   .menuIcon {
@@ -139,14 +143,14 @@
     display: block;
     text-align: center;
     margin: 2rem auto;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     width: 80%;
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
+    color: #45a29e;
+    padding: 0.875rem 1.25rem;
+    border: 0.0625rem solid #45a29e;
     transition: all 0.3s ease-out;
   }
 

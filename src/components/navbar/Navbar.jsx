@@ -5,31 +5,31 @@ import "./navbar.css";
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
-  const [button, setButton] = useState(true);
+  const [button, setSignUpButton] = useState(false);
 
   const openMenuHandler = () => setOpenMenu(!openMenu);
   const closeMobileMenuHandler = () => setOpenMenu(false);
 
-  const showButton = () => {
+  const showSignUpButton = () => {
     if (window.innerWidth <= 960) {
-      setButton(false);
+      setSignUpButton(false);
     } else {
-      setButton(true);
+      setSignUpButton(true);
     }
   };
 
   useEffect(() => {
-    showButton();
+    showSignUpButton();
   }, []);
 
-  window.addEventListener("resize", showButton);
+  window.addEventListener("resize", showSignUpButton);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbarContainer">
           <Link to="/" className="navbarLogo" onClick={closeMobileMenuHandler}>
-            TRVL <i className="fab fa-typo3" />
+            anchor.<i className="fa-solid fa-anchor"></i>
           </Link>
           <div className="menuIcon" onClick={openMenuHandler}>
             <i className={openMenu ? "fas fa-times" : "fas fa-bars"} />
