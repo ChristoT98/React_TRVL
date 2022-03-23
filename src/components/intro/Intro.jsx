@@ -1,7 +1,7 @@
 import { Button } from "../button/Button";
+import bgImage from "../../videos/video-1.mp4";
 import "../../App.css";
 import "./intro.css";
-import bgImage from "../../videos/video-1.mp4";
 
 export default function Intro() {
   return (
