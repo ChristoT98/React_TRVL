@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <Intro />
-      {/* <Cards/>
-      <Footer/> */}
+      <Cards/>
+      <Footer/>
     </>
   );
 }

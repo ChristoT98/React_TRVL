@@ -4,10 +4,10 @@ import CardItem from "../cardItem/CardItem";
 export default function Cards() {
   return (
     <div className="cards">
-      <h1>Check out these EPIC Destinations!</h1>
-      <div className="cards__container">
-        <div className="cards__wrapper">
-          <ul className="cards__items">
+      <h1>Check out these EPIC Places!</h1>
+      <div className="cardsContainer">
+        <div className="cardsWrapper">
+          <ul className="cardsItems">
             <CardItem
               src="images/img-9.jpg"
               text="Explore the hidden waterfall deep inside the Amazon Jungle"
@@ -21,7 +21,7 @@ export default function Cards() {
               path="/services"
             />
           </ul>
-          <ul className="cards__items">
+          <ul className="cardsItems">
             <CardItem
               src="images/img-3.jpg"
               text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
